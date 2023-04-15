@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .Card {
-  @apply w-48 h-64 shadow-md rounded-lg shrink-0 snap-center;
+  @apply w-48 h-64 shadow-md rounded-lg shrink-0 snap-center transform transition-all hover:-translate-y-4 hover:shadow-xl;
 }
 .card-details {
   @apply w-full h-2/5 rounded-b-lg flex flex-col justify-center gap-2 p-4;

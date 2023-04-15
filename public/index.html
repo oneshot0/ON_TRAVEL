@@ -13,7 +13,7 @@
     />
     <title>Platzi Travel</title>
   </head>
-  <body>
+  <body class="font-Montserrat">
     <nav></nav>
     <div id="tab_bar"></div>
     <section class="w-full h-screen">
@@ -23,14 +23,14 @@
             class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center"
           >
             <input
-              class="outline outline-3 outline-dotted outline-blue-300 p-3 rounded-full shadow-sm"
+              class="w-8/12 outline outline-3 outline-dotted outline-blue-300 p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12"
               placeholder="San Francisco"
               type="search"
               name=""
               id=""
             />
             <button
-              class="w-32 rounded-full bg-white text-xl shadow-sm text-primary text-blue-200 font-semibold p-4"
+              class="w-48 rounded-full bg-white text-lg shadow-sm text-primary text-blue-200 font-semibold p-4 transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110"
             >
               Explorar
             </button>
@@ -44,7 +44,7 @@
         <p class="text-3xl font-semibold text-primary mb-6">Recomendados</p>
         <div
           id="recomendadas"
-          class="flex h-72 flex-row overflow-x-auto overscroll-x-auto overscroll-x-contain [@media(max-width:767px)]:scrollbar-hide space-x-10"
+          class="p-4 flex h-72 flex-row overflow-x-auto overscroll-x-auto overscroll-x-contain [@media(max-width:767px)]:scrollbar-hide space-x-10"
         >
           <div class="Card">
             <div class="rounded-t-lg w-48 h-3/5 bg-norway bg-cover"></div>
