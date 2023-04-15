@@ -6,18 +6,18 @@ module.exports = {
     backgroundImage: {
         "sanFrancisco": "url('../img/sanFrancisco.jpg')",
         "sanFranciscoDesktop": "ur.l('../img/sanFranciscoDesktop.jpg')",
-        "yosemite": "ur.l('../img/yosemite.jpg')",
-        "LA": "ur.l('../img/LA.jpg')",
-        "seattle": "ur.l('../img/seattle.jpg')",
-        "new_york": "ur.l('../img/new_york.jpg')",
-        "norway": "ur.l('../img/norway.jpg')",
-        "sydney": "ur.l('../img/sydney.jpg')",
-        "miami": "ur.l('../img/miami.jpg')",
+        "yosemite": "url('../img/yosemite.jpg')",
+        "LA": "url('../img/LA.jpg')",
+        "seattle": "url('../img/seattle.jpg')",
+        "new_york": "url('../img/new_york.jpg')",
+        "norway": "url('../img/norway.jpg')",
+        "sydney": "url('../img/sydney.jpg')",
+        "miami": "url('../img/miami.jpg')",
         "switzerland": "ur.l('../img/switzerland.jpg')",
-        "bali": "ur.l('../img/bali.jpg')",
-        "chicago": "ur.l('../img/chicago.jpg')",
-        "europe": "ur.l('../img/europe.jpg')",
-        "iceland": "ur.l('../img/iceland.jpg')",
+        "bali": "url('../img/bali.jpg')",
+        "chicago": "url('../img/chicago.jpg')",
+        "europe": "url('../img/europe.jpg')",
+        "iceland": "url('../img/iceland.jpg')",
         },
     backgroundColor: theme =>({
         ...theme("colors"),
@@ -35,6 +35,8 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+     require('tailwind-scrollbar-hide')
+  ],
 }
 
