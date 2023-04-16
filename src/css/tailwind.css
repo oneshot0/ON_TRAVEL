@@ -16,3 +16,17 @@
 .Card:nth-child(odd) {
   @apply bg-secondary text-white;
 }
+
+.CardTitle {
+  @apply text-3xl px-8 pt-8 pb-2 font-semibold;
+}
+
+.Card-rentas {
+  @apply w-full h-96 bg-cover rounded-xl flex-none shadow-md;
+}
+.Card-rentas p:nth-child(1) {
+  @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white;
+}
+.Card-rentas p:nth-child(2) {
+  @apply text-sm pl-8 mr-24 text-black;
+}
