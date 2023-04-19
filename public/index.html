@@ -21,16 +21,30 @@
     <title>Platzi Travel</title>
   </head>
   <body class="font-Montserrat">
-    <nav></nav>
+    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed">
+      <div class="h-auto w-auto">
+        <p class="text-xl text text-primary font-black">Platzi Travel</p>
+      </div>
+      <div class="flex space-x-8">
+        <a class="font-bold text-sm text-primary" href="#home">Inicio</a>
+        <a class="font-bold text-sm text-primary" href="#recomendados">Remomendados</a>
+        <a class="font-bold text-sm text-primary" href="#rentas_destacadas">Rentas</a>
+        <a class="font-bold text-sm text-primary" href="#faqs">FAQS</a>
+        <a class="font-bold text-sm text-primary" href="#sobre_nosotros">Sobre nosotros</a>
+      </div>
+      <div class="flex space-x-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path class="fill-current text-primary" stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
 
-    <section class="w-full h-3/4 lg:relative">
-      <div class="w-full h-3/4 lg:relative" id="home">
-        <div class="w-full h-3/4">
-          <div
-            class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-32 lg:justify-start"
-          >
-            <input
-              class="w-8/12 outline outline-3 outline-dotted outline-blue-300 p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden"
+      </div>
+    </nav>
+
+    <section class="w-full h-screen">
+      <div class="w-full h-3/4 " id="home">
+        <div class="w-full h-full">
+          <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-48 lg:justify-start">
+            <input class="w-8/12 outline outline-3 outline-dotted outline-blue-300 p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden"
               placeholder="San Francisco"
               type="search"
               name=""
@@ -48,7 +62,7 @@
             </button>
           </div>
           <div
-            class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center"
+            class="w-full h-full lg:h-full lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center"
           >
             <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="" />
           </div>
@@ -183,7 +197,7 @@
         </div>
       </div>
     </section>
-    <footer class="w-full h-auto bg-gray-100 px-10 py-6 space-y-2">
+    <footer id="sobre_nosotros" class="w-full h-auto bg-gray-100 px-10 py-6 space-y-2">
       <p class="text-lg font-bold">Acerca de</p>
       <p class="text-sm text-gray-300">Inversionistas</p>
       <p class="text-sm text-gray-300">Empleos</p>
@@ -198,10 +212,7 @@
         <i class="fa-brands fa-facebook"></i>
       </div>
     </footer>
-    <div
-      class="w-full h-10 bg-white fixed left-0 bottom-0 shadow-md flex space-x-4 justify-center"
-      id="tab_bar"
-    >
+    <div class="w-full h-10 bg-white fixed left-0 bottom-0 shadow-md flex space-x-4 justify-center" id="tab_bar">
       <a href="#home">
         <svg
           xmlns="http://www.w3.org/2000/svg"
