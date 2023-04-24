@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/css/tailwind.css" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,37 +20,39 @@
     />
     <title>Platzi Travel</title>
   </head>
-  <body class="font-Montserrat">
-    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed">
-      <div class="h-auto w-auto">
-        <p class="text-xl text text-primary font-black">Platzi Travel</p>
+  <body class="font-Montserrat dark:bg-gray-900">
+    <nav class="lg:w-full lg:h-13 hidden lg:bg-white lg:flex lg:p-4 lg:justify-between fixed z-10 dark:bg-gray-800">
+      <div class="">
+        <p class="text-xl text text-primary font-black dark:text-white">Platzi Travel</p>
       </div>
       <div class="flex space-x-8">
-        <a class="font-bold text-sm text-primary" href="#home">Inicio</a>
-        <a class="font-bold text-sm text-primary" href="#recomendados">Remomendados</a>
-        <a class="font-bold text-sm text-primary" href="#rentas_destacadas">Rentas</a>
-        <a class="font-bold text-sm text-primary" href="#faqs">FAQS</a>
-        <a class="font-bold text-sm text-primary" href="#sobre_nosotros">Sobre nosotros</a>
+        <a class="font-bold text-sm text-primary dark:text-white" href="#home">Inicio</a>
+        <a class="font-bold text-sm text-primary dark:text-white" href="#recomendados">Remomendados</a>
+        <a class="font-bold text-sm text-primary dark:text-white" href="#rentas_destacadas">Rentas</a>
+        <a class="font-bold text-sm text-primary dark:text-white" href="#faqs">FAQS</a>
+        <a class="font-bold text-sm text-primary dark:text-white" href="#sobre_nosotros">Sobre nosotros</a>
       </div>
       <div class="flex space-x-4">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path class="fill-current text-primary" stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path class="dark:text-white" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>
+        <button id="toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path class="fill-current text-primary dark:text-white" stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>
+        </button>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path class="dark:text-white" stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
 
       </div>
     </nav>
 
-    <section class="w-full h-screen">
-      <div class="w-full h-3/4 " id="home">
+    <section class="w-full h-screen dark: text-white">
+      <div class="w-full h-3/4" id="home">
         <div class="w-full h-full">
-          <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-48 lg:justify-start">
+          <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-32 lg:justify-start">
             <input class="w-8/12 outline outline-3 outline-dotted outline-blue-300 p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden"
               placeholder="San Francisco"
               type="search"
               name=""
               id=""
             />
-            <div class="hidden lg:h-auto lg:w-2/5 lg:flex pb-6">
+            <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
               <p class="text-4xl ml-16 font-bold text-black">
                 Encuentra más ubicaciones como esta
               </p>
@@ -62,18 +64,16 @@
             </button>
           </div>
           <div
-            class="w-full h-full lg:h-full lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center"
+            class=" w-full h-full lg:h-full lg:pt-12 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center"
+
           >
             <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="" />
           </div>
         </div>
       </div>
-      <main class="w-full pl-3 pt-10 pb-10">
-        <p class="text-3xl font-semibold text-primary mb-6">Recomendados</p>
-        <div
-          id="recomendados"
-          class="p-4 flex h-72 flex-row overflow-x-auto overscroll-x-auto overscroll-x-contain [@media(max-width:767px)]:scrollbar-hide space-x-10"
-        >
+      <main class="w-full h-auto pl-3 pt-10 pb-10">
+        <p class="text-3xl font-semibold text-primary mb-6 dark:text-white">Recomendados</p>
+        <div id="recomendados" class="p-4 flex h-72 flex-row overflow-x-auto overscroll-x-auto overscroll-x-contain [@media(max-width:767px)]:scrollbar-hide space-x-10">
           <div class="Card">
             <div class="rounded-t-lg w-48 h-3/5 bg-norway bg-cover"></div>
             <div class="card-details">
@@ -112,8 +112,8 @@
           <div class="Card">
             <div class="rounded-t-lg w-48 h-3/5 bg-new_york bg-cover"></div>
             <div class="card-details">
-              <p class="text-tertiary font-bold text-xl">New York</p>
-              <p class="text-tertiary text-base">Gran ciudad, explora ahora!</p>
+              <p class=" font-bold text-xl">New York</p>
+              <p class=" text-base">Gran ciudad, explora ahora!</p>
             </div>
           </div>
           <div class="Card">
@@ -126,9 +126,11 @@
             </div>
           </div>
         </div>
+
+
       </main>
-      <div class="px-3 h-auto w-full lg:px-10" id="rentas_destacadas">
-        <p class="text-3xl text-primary font-semibold pb-6 mt-2">
+      <div class="px-3 h-auto w-full lg:px-8" id="rentas_destacadas">
+        <p class="text-3xl text-primary font-semibold pb-6 mt-2 dark:text-white">
           Rentas Destacadas
         </p>
         <div class="w-full h-full flex-col items-center justify-center">
@@ -154,65 +156,66 @@
           </div>
         </div>
       </div>
-      <div class="w-full h-full px-10 mb-5" id="faqs">
+      <div class="w-full h-auto px-10 mb-5" id="faqs">
         <div class="w-full h-full flex flex-col space-y-4">
-          <p class="text-3xl text-primary font-semibold mt-6">FAQs</p>
+          <p class="text-3xl text-primary font-semibold mt-6 dark:text-white">FAQs</p>
           <div>
-            <p class="text-xl font-semibold text-primary">
+            <p class="text-xl font-semibold text-primary dark:text-white">
               Política de Cancelación
             </p>
-            <p class="font-medium pt-2">
+            <p class="font-medium pt-2 dark:text-white">
               Para estancias menores a una semana es importante avisar con 3
               días de anticipación, de caso contario será sancionado.
             </p>
           </div>
           <div>
-            <p class="text-xl font-semibold text-primary">Métodos de pago</p>
-            <p class="font-medium pt-2">
+            <p class="text-xl font-semibold text-primary dark:text-white">Métodos de pago</p>
+            <p class="font-medium pt-2 dark:text-white">
               Aceptamos distintos métodos de pago: VISA, MasterCard, American
               Express, Paypal y Binance.
             </p>
           </div>
           <div>
-            <p class="text-xl font-semibold text-primary">Mascotas</p>
-            <p class="font-medium pt-2">
+            <p class="text-xl font-semibold text-primary dark:text-white">Mascotas</p>
+            <p class="font-medium pt-2 dark:text-white">
               El tema de las mascotas dependerá directamente del anfitrión.
             </p>
           </div>
           <div>
-            <p class="text-xl font-semibold text-primary">
+            <p class="text-xl font-semibold text-primary dark:text-white">
               Información de Seguridad
             </p>
-            <p class="font-medium pt-2">
+            <p class="font-medium pt-2 dark:text-white">
               Todas nuestras estancias cuentan con seguro en caso de accidentes.
             </p>
           </div>
           <div>
-            <p class="text-xl font-semibold text-primary">Estancias Largas</p>
-            <p class="font-medium pt-2">
+            <p class="text-xl font-semibold text-primary dark:text-white">Estancias Largas</p>
+            <p class="font-medium pt-2 dark:text-white">
               Contamos con estancias de hasta 3 meses, en este caso es requerido
               un anticipo con un monto del 50% del valor de la renta.
             </p>
           </div>
         </div>
       </div>
+      <footer id="sobre_nosotros" class="w-full h-auto bg-gray-50 p-6 mt-8 mb-8 space-y-2 lg:px-14">
+        <p class="text-lg font-bold lg:text-black">Acerca de</p>
+        <p class="text-sm text-gray-300">Inversionistas</p>
+        <p class="text-sm text-gray-300">Empleos</p>
+        <p class="text-sm text-gray-300">Terminos y Condiciones</p>
+        <p class="text-sm text-gray-300">Platzi Travel, Inc.</p>
+        <p class="text-sm text-gray-300">Síguenos</p>
+        <div class="w-full flex space-x-3 justify-center">
+          <i class="fa-brands fa-twitter text-black"></i>
+          <i class="fa-brands fa-instagram text-black"></i>
+          <i class="fa-brands fa-youtube text-black"></i>
+          <i class="fa-brands fa-steam text-black"></i>
+          <i class="fa-brands fa-facebook text-black"></i>
+        </div>
+      </footer>
     </section>
-    <footer id="sobre_nosotros" class="w-full h-auto bg-gray-100 px-10 py-6 space-y-2">
-      <p class="text-lg font-bold">Acerca de</p>
-      <p class="text-sm text-gray-300">Inversionistas</p>
-      <p class="text-sm text-gray-300">Empleos</p>
-      <p class="text-sm text-gray-300">Terminos y Condiciones</p>
-      <p class="text-sm text-gray-300">Platzi Travel, Inc.</p>
-      <p class="text-sm text-gray-300">Síguenos</p>
-      <div class="w-full flex space-x-3 justify-center">
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-steam"></i>
-        <i class="fa-brands fa-facebook"></i>
-      </div>
-    </footer>
-    <div class="w-full h-10 bg-white fixed left-0 bottom-0 shadow-md flex space-x-4 justify-center" id="tab_bar">
+    
+    <div class="w-full h-10 bg-white fixed left-0 bottom-0 shadow-md flex space-x-10 items-center justify-center dark:bg-gray-800 lg:hidden" id="tab_bar">
       <a href="#home">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -240,7 +243,7 @@
           class="w-7 h-7"
         >
           <path
-            class="text-red-400"
+            class="text-gray-500"
             stroke-linecap="round"
             stroke-linejoin="round"
             d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
@@ -264,17 +267,10 @@
           />
         </svg>
       </a>
-      <button class="flex justify-start">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-7 h-7"
-        >
+      <button class="flex justify-start" id="toggle-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
           <path
-            class="fill-current text-gray-500"
+            class="fill-current text-primary"
             stroke-linecap="round"
             stroke-linejoin="round"
             d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
@@ -291,6 +287,7 @@
           class="w-7 h-7"
         >
           <path
+            class="text-gray-500"
             stroke-linecap="round"
             stroke-linejoin="round"
             d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
@@ -298,5 +295,19 @@
         </svg>
       </a>
     </div>
+    <script>
+      const htmlElement = document.querySelector("html") 
+      const toggleButton = document.querySelector("#toggle")
+      const toggleButtonSm = document.querySelector("#toggle-sm")
+
+      toggleButton.addEventListener("click", () => toggleDarkMode() )
+      toggleButtonSm.addEventListener("click", () => toggleDarkMode() )
+
+      const toggleDarkMode = () => {
+        htmlElement.classList.contains("dark")?
+        htmlElement.classList.remove("dark") :
+        htmlElement.classList.add("dark")
+      }
+    </script>
   </body>
 </html>
