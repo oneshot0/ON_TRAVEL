@@ -1,5 +1,9 @@
 # platzi-travel
 Responsive website made with Tailwind CSS, includes dark mode toggle.
+[Conóceme  !!!](https://oneshot0.github.io/ON_TRAVEL/public/index.html "Conóceme  !!!")
+
+![](https://images.pexels.com/photos/16521796/pexels-photo-16521796.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+
 
 ## Features
 - Responsive Layout
